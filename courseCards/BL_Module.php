@@ -23,7 +23,7 @@ BL Module
                 <label for="card1" class="button return" aria-hidden="true">
                     <i class="fa fa-arrow-left"></i>
                 </label>
-                <a href="/usersc/viewBL.php" class="button return button-play" aria-hidden="true">
+                <a href="#" class="button return button-play" aria-hidden="true">
                   <i class="fa fa-play"></i>
                 </a>
             </div>

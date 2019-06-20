@@ -9,25 +9,23 @@
   <meta name="" content="">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="/css/card-flip.css">
 </head>
 
 <body>
-
-
 
 
   <div class="wrapper">
     <?php
       // -- card_flip
       //Include the When Lightning Strikes Module
-      include $abs_us_root.$us_url_root.'usersc/modules/card_flip/WLS_Module.php';
+      include 'courseCards/WLS_Module.php';
       //Include the FPDP Module
-      include $abs_us_root.$us_url_root.'usersc/modules/card_flip/FP_Module.php';
+      include 'courseCards/FP_Module.php';
       //Include the Safe Passage Module
-      include $abs_us_root.$us_url_root.'usersc/modules/card_flip/SafePassage_Module.php';
+      include 'courseCards/SafePassage_Module.php';
       //Include the Beyond Lockdown Module
-      include $abs_us_root.$us_url_root.'usersc/modules/card_flip/BL_Module.php';
+      include 'courseCards/BL_Module.php';
     ?>
   </div>
 
