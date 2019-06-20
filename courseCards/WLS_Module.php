@@ -6,7 +6,7 @@ When Lightning Strikes Module
 <div class="card">
     <input type="checkbox" id="card4" class="more">
     <div class="content">
-      <div class="front" style="background-image: url('/usersc/images/wls.jpg')">
+      <div class="front" style="background-image: url('../images/wls.jpg')">
         <div class="inner">
             <h2>When Lightning Strikes</h2>
             <label for="card4" class="button" aria-hidden="true">

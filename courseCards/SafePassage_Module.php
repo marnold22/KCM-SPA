@@ -6,7 +6,7 @@ Safe Passage Module
 <div class="card">
     <input type="checkbox" id="card3" class="more">
     <div class="content">
-      <div class="front" style="background-image: url('/usersc/images/sp.png')">
+      <div class="front" style="background-image: url('../images/sp.png')">
             <div class="inner">
                 <h2>Safe Passage</h2>
                 <label for="card3" class="button" aria-hidden="true">

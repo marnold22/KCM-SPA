@@ -6,7 +6,7 @@ BL Module
 <div class="card">
     <input type="checkbox" id="card1" class="more" aria-hidden="true">
     <div class="content">
-        <div class="front" style="background-image: url('/usersc/images/bl.jpg')">
+        <div class="front" style="background-image: url('../images/bl.jpg')">
             <div class="inner">
                 <h2>Beyond Lockdown</h2>
                 <label for="card1" class="button" aria-hidden="true">
