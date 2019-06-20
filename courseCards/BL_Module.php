@@ -6,7 +6,7 @@ BL Module
 <div class="card">
     <input type="checkbox" id="card1" class="more" aria-hidden="true">
     <div class="content">
-        <div class="front" style="background-image: url('../images/bl.jpg')">
+        <div class="front" style="background-image: url('../assets/images/bl.jpg')">
             <div class="inner">
                 <h2>Beyond Lockdown</h2>
                 <label for="card1" class="button" aria-hidden="true">
@@ -23,7 +23,7 @@ BL Module
                 <label for="card1" class="button return" aria-hidden="true">
                     <i class="fa fa-arrow-left"></i>
                 </label>
-                <a href="#" class="button return button-play" aria-hidden="true">
+                <a href="../assets/videos/BL.mp4" class="button return button-play" aria-hidden="true">
                   <i class="fa fa-play"></i>
                 </a>
             </div>
