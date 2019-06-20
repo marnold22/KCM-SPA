@@ -1,3 +1,10 @@
+<?php session_start(); /* Starts the session */
+if(!isset($_SESSION['UserData']['Username'])){
+header("location:login.php");
+exit;
+}
+?>
+
 <!doctype html>
 
 <html lang="en">
@@ -18,7 +25,7 @@
   <div class="container-fluid">
       <div class="text-center">
           <p class="welcomeTitle">WELCOME</p>
-          <img src="../images/KCMLogo.png" alt="..." style="" class="KCMLogo">
+          <img src="../assets/images/KCMLogo.png" alt="..." style="" class="KCMLogo">
       </div>
   </div>
   <br>
@@ -40,6 +47,10 @@
       //Include the Beyond Lockdown Module
       include 'courseCards/BL_Module.php';
     ?>
+  </div>
+
+  <div class="wrapper">
+    <a href="logout.php">Logout</a>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
