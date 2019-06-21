@@ -1,42 +1,54 @@
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script type="text/javascript">
-      $(window).on('load',function(){
-          $('#exampleModalCenter').modal('show');
+    $(document).ready(function(){
+        $("#loginModal").modal('show');
       });
   </script>
 </head>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form action="" method="post" name="Login_Form">
-          <?php if(isset($msg)){?>
-            <p><?php echo $msg;?></p>
-          <?php } ?>
-          <label>Username</label><br>
-          <input name="Username" type="text" class="Input"><br>
-          <label>Password</label><br>
-          <input name="Password" type="password" class="Input"><br><br>
-          <input name="Submit" type="submit" value="Login" class="btn btn-secondary">
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<style>
+body {
+  background-image: url("assets/images/blue_bkg.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<body>
+
+    <div class="w3-container">
+      <div id="loginModal" class="w3-modal" data-keyboard="false" data-backdrop="static">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+          <div class="w3-center"><br>
+            <img src="/assets/images/cppslogo.png" alt="Avatar" style="width:30%" class=" w3-margin-top">
+          </div>
+
+          <form class="w3-container" action="" method="post" name="Login_Form">
+            <div class="w3-section">
+              <?php if(isset($msg)){?>
+                <p><?php echo $msg;?></p>
+              <?php } ?>
+
+              <label><b>Username</b></label>
+              <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="Username" required>
+              <label><b>Password</b></label>
+              <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="Password" required>
+              <input class="w3-button w3-block w3-dark-grey w3-section w3-padding" value="Login" name="Submit" type="submit">
+            </div>
+          </form>
+
+        </div>
       </div>
     </div>
-  </div>
-</div>
+
+</body>
 <!-- ++++++++++++++++++++++++++++++++++++ PHP STUFF HERE ++++++++++++++++++++++++++++++++++++ -->
 
 <?php
