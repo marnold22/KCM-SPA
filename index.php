@@ -1,6 +1,6 @@
 <?php session_start(); /* Starts the session */
 if(!isset($_SESSION['UserData']['Username'])){
-header("location:login_w3.php");
+header("location:login.php");
 exit;
 }
 ?>
@@ -32,7 +32,6 @@ exit;
   </div>
 
   <div class="wrapper">
-
     <?php
       //Include the When Lightning Strikes Module
       include 'courseCards/WLS_Module.php';
@@ -43,7 +42,6 @@ exit;
       //Include the Beyond Lockdown Module
       include 'courseCards/BL_Module.php';
     ?>
-
   </div>
   <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
